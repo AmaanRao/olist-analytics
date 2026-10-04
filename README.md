@@ -32,4 +32,7 @@ Raw CSVs → SQLite database → SQL analysis → exported CSVs → Tableau dash
 2. `pip install pandas` then `python3 scripts/load_db.py` to build `olist.db`.
 3. `sqlite3 olist.db < sql/analysis.sql` to run the analysis.
 
-*Note: an AI natural-language-to-SQL layer is planned as a next step.*
+## AI layer (natural language to SQL)
+scripts/ai_query.py sends a plain-English question plus the database schema to Google
+Gemini, which writes a read-only SQL query; the script runs it and prints both the SQL
+and the result. Example: python3 scripts/ai_query.py "which 5 states have the worst on-time delivery rate?"

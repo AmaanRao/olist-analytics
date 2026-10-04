@@ -11,3 +11,4 @@ data/*.csv
 
 # Mac clutter
 .DS_Store
+.env
