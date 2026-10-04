@@ -1,0 +1,13 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Generated database (rebuild with scripts/load_db.py)
+*.db
+
+# Data files (download from Kaggle — see README)
+data/*.csv
+
+# Mac clutter
+.DS_Store
