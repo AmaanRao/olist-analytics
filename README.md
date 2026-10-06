@@ -36,3 +36,7 @@ Raw CSVs → SQLite database → SQL analysis → exported CSVs → Tableau dash
 scripts/ai_query.py sends a plain-English question plus the database schema to Google
 Gemini, which writes a read-only SQL query; the script runs it and prints both the SQL
 and the result. Example: python3 scripts/ai_query.py "which 5 states have the worst on-time delivery rate?"
+
+## Interactive web app (Streamlit)
+app.py is a Streamlit web app combining the charts and a live AI question box on one page.
+Run it with: streamlit run app.py
